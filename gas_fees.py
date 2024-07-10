@@ -1,7 +1,7 @@
 import requests
 
 def get_gas_fees(api_key):
-    url = f"https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey={api_key}"
+    url = f"https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey={api_key}" # use your api key for getting the prices from etherscan
     response = requests.get(url)
     data = response.json()
 
